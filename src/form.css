@@ -1,0 +1,8 @@
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #B53636;
+    font-family: 'Rajdhani';
+}

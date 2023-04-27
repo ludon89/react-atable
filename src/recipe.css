@@ -1,0 +1,16 @@
+.recipeCard {
+  box-sizing: border-box;
+  background: #F5F5F5;
+  border: 2px solid #B53636;
+  max-width: 400px;
+}
+
+.recipeTitle {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  align-items: center;
+  text-align: center;
+  color: #9B3E3E;
+}
