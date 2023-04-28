@@ -1,6 +1,6 @@
-import '../card.css';
+import '../styles/card.css';
 
-function Card({ recipeType }) {
+function Card ({ recipeType }) {
   return (
     <div className="homeCard">
       <h2 className="recipeType">

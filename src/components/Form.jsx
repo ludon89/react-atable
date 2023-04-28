@@ -1,6 +1,6 @@
-import '../form.css'
+import '../styles/form.css';
 
-function Form() {
+function Form () {
     return (
         <div>
             <form action="" method="post" className="contact">

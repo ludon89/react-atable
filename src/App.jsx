@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Pages importation
@@ -13,7 +13,7 @@ import Navbar from './components/Navbar';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
-function App() {
+function App () {
   return (
     <>
       <Header />

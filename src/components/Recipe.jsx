@@ -1,6 +1,6 @@
-import '../recipe.css';
+import '../styles/recipe.css';
 
-function Recipe({ recipeTitle }) {
+function Recipe ({ recipeTitle }) {
   return (
     <div className="recipeCard">
       <h2 className="recipeType">

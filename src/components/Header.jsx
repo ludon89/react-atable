@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
 import logo from '../logo.jpg';
-import '../header.css';
+import '../styles/header.css';
 
-function Header() {
+function Header () {
     const [active, setActive] = useState("nav__menu");
 
     const navToggle = () => {
         active === 'nav__menu' ? setActive('nav__menu nav__active') : setActive('nav__menu');
-    }
+    };
 
     return (
         <header className='header'>

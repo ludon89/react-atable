@@ -1,6 +1,6 @@
-import '../footer.css';
+import '../styles/footer.css';
 
-function Footer() {
+function Footer () {
     return (
         <div className="footer">
             <p className='text'>2023 - Copyright</p>
