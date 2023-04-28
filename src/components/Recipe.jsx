@@ -1,6 +1,8 @@
 import '../styles/recipe.css';
 
-function Recipe ({ recipeName, recipeServings, recipeDescription }) {
+import Data from "./data/recettes.json";
+
+export function Recipe ({ recipeName, recipeServings, recipeDescription }) {
   return (
     <div className="recipeCard">
       <h2 className="recipeName">
@@ -17,4 +19,12 @@ function Recipe ({ recipeName, recipeServings, recipeDescription }) {
   );
 }
 
-export default Recipe;
+export function RecipeData () {
+  return (
+    <div>
+      <p>TEST</p>
+    </div>
+  );
+}
+
+
