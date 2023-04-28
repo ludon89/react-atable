@@ -1,14 +1,17 @@
 import '../styles/recipe.css';
 
-function Recipe ({ recipeTitle }) {
+function Recipe ({ recipeName, recipeServings, recipeDescription }) {
   return (
     <div className="recipeCard">
-      <h2 className="recipeType">
-        {recipeTitle}
+      <h2 className="recipeName">
+        {recipeName}
       </h2>
       <img src="https://picsum.photos/300/200" alt="" />
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut animi saepe quasi et. Placeat pariatur veniam libero hic ipsum deserunt quos molestias voluptatum dolores iste! Molestias iusto ex doloribus non.
+        Pour {recipeServings} personnes
+      </p>
+      <p>
+        {recipeDescription}
       </p>
     </div>
   );
