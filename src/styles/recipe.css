@@ -13,3 +13,7 @@
   text-align: center;
   color: #9B3E3E;
 }
+
+.recipeImage {
+  max-width: 100%;
+}
