@@ -25,9 +25,10 @@ export function RecipeData () {
 
   console.log(filteredResults);
 
-  if (condition) {
+  // if (condition) {
 
-  }
+  // }
+
 
   return (
     <>
