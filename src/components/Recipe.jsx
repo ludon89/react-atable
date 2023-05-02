@@ -15,10 +15,9 @@ export function RecipeData () { // TODO : affichage des ustensiles en liste
     // check champ de recherche vide
     if (searchInput !== "") {
       const filteredData = Data.filter((item) => {
-        return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase());
+        return Object.values(item.name).join('').toLowerCase().includes(searchInput.toLowerCase());
       });
       setFilteredResults(filteredData);
-      // console.log(filteredData);
     } else {
       setFilteredResults(Data);
     }
