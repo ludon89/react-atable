@@ -100,7 +100,7 @@ export function RecipeData () { // TODO : affichage des ustensiles en liste
               <h3>Ingrédients</h3>
               {item.ingredients.map(subitem => {
                 return (
-                  <ul key={subitem.id}>
+                  <ul key={subitem.ingredient}>
                     <li>
                       {subitem.ingredient} : {subitem.quantity} {subitem.unit}
                     </li>
@@ -122,9 +122,11 @@ export function RecipeData () { // TODO : affichage des ustensiles en liste
               <br />
 
               <h3>Ustensiles requis</h3>
-              <ul key={item.ustensils} value={item.ustensils}>
-                <li>{item.ustensils}</li>
-              </ul>
+              {item.ustensils.map(ustensils =>
+                <ul key={ustensils}>
+                  <li>{ustensils}</li>
+                </ul>
+              )}
 
             </div>
           );
