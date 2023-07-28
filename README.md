@@ -1,4 +1,6 @@
-Projet React réalisé dans le cadre de ma formation Développeur Web et Web Mobile chez Simplon.co
+Projet React réalisé dans le cadre de ma formation Développeur Web et Web Mobile chez Simplon.co.
+
+La mise en forme n'est pas au point pour l'instant mais la recherche dynamique marche.
 
 ## Brief/Consignes
 ### Contexte du projet
