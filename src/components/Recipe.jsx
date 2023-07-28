@@ -25,11 +25,6 @@ export function RecipeData () {
 
   console.log(filteredResults);
 
-  // if (condition) {
-
-  // }
-
-
   return (
     <>
       <div className='searchBarCont'>
@@ -150,5 +145,3 @@ export function RecipeData () {
     </>
   );
 }
-
-
