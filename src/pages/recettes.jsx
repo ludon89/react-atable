@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Titre from '../components/Titre';
-import Content from '../components/Content';
+import Titre from "../components/Titre";
+import Content from "../components/Content";
 // import { SearchBar } from '../components/SearchBar';
-import { RecipeData } from '../components/Recipe';
+import { RecipeData } from "../components/Recipe";
 
 const Recettes = () => {
   return (

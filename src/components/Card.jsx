@@ -1,11 +1,9 @@
-import '../styles/card.css';
+import "../styles/card.css";
 
-function Card ({ recipeType }) {
+function Card({ recipeType }) {
   return (
     <div className="homeCard">
-      <h2 className="recipeType">
-        {recipeType}
-      </h2>
+      <h2 className="recipeType">{recipeType}</h2>
     </div>
   );
 }

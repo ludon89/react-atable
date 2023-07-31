@@ -1,11 +1,7 @@
-import '../styles/content.css';
+import "../styles/content.css";
 
-function Content ({ children }) {
-  return (
-    <div className='flexCont'>
-      {children}
-    </div>
-  );
+function Content({ children }) {
+  return <div className="flexCont">{children}</div>;
 }
 
 export default Content;

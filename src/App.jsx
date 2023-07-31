@@ -1,18 +1,18 @@
-import React from 'react';
-import './styles/App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from "react";
+import "./styles/App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Pages importation
-import Accueil from './pages/accueil';
-import Recettes from './pages/recettes';
-import Contact from './pages/contact';
+import Accueil from "./pages/accueil";
+import Recettes from "./pages/recettes";
+import Contact from "./pages/contact";
 
 // Components importation
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-function App () {
+function App() {
   return (
     <>
       <Header />
@@ -20,10 +20,10 @@ function App () {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<Accueil />} />
-          <Route path='/accueil' element={<Accueil />} />
-          <Route path='/recettes' element={<Recettes />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route exact path="/" element={<Accueil />} />
+          <Route path="/accueil" element={<Accueil />} />
+          <Route path="/recettes" element={<Recettes />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
 
