@@ -10,7 +10,6 @@ import Contact from './pages/contact';
 // Components importation
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App () {
@@ -28,12 +27,9 @@ function App () {
         </Routes>
       </Router>
 
-      {/* <Main /> */}
       <Footer />
     </>
   );
 }
 
 export default App;
-
-
