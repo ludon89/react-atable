@@ -16,8 +16,6 @@ export function RecipeData() {
     item.name.toLowerCase().includes(searchInput.toLowerCase()),
   );
 
-  console.log(filteredData);
-
   const noResults = () => {
     if (searchInput.length > 1 && filteredData.length === 0) {
       return (
