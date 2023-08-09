@@ -7,29 +7,19 @@ import Data from "./data/recettes.json";
 
 export function RecipeData() {
   const [searchInput, setSearchInput] = useState("");
-  const [filteredResults, setFilteredResults] = useState([]);
 
-  const searchItems = (searchValue) => {
-    setSearchInput(searchValue);
-
-    // check champ de recherche vide
-    if (searchInput !== "") {
-      const filteredData = Data.filter((item) => {
-        return Object.values(item.name)
-          .join("")
-          .toLowerCase()
-          .includes(searchInput.toLowerCase());
-      });
-      setFilteredResults(filteredData);
-    } else {
-      setFilteredResults(Data);
-    }
+  const handleInputChange = (e) => {
+    setSearchInput(e.target.value);
   };
 
-  console.log(filteredResults);
+  const filteredData = Data.filter((item) =>
+    item.name.toLowerCase().includes(searchInput.toLowerCase()),
+  );
+
+  console.log(filteredData);
 
   const noResults = () => {
-    if (searchInput.length > 1 && filteredResults.length === 0) {
+    if (searchInput.length > 1 && filteredData.length === 0) {
       return (
         <div>
           <p>Pas de résultats</p>
@@ -47,7 +37,7 @@ export function RecipeData() {
             placeholder="Recherche..."
             name="search"
             className="searchBar"
-            onChange={(e) => searchItems(e.target.value)}
+            onChange={handleInputChange}
           />
         </form>
       </div>
@@ -55,7 +45,7 @@ export function RecipeData() {
       {noResults()}
 
       {searchInput.length > 1
-        ? filteredResults.map((item) => {
+        ? filteredData.map((item) => {
             return (
               <div className="recipeCard" key={item.id}>
                 <h2 className="recipeName">{item.name}</h2>
