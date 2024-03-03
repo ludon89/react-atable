@@ -1,18 +1,17 @@
 import React from "react";
 
-// Components importation
 import Titre from "../components/Titre";
 import Content from "../components/Content";
-import Card from "../components/Card";
+
+import buffet from "../buffet.jpg";
+import "../styles/accueil.css"
 
 const Accueil = () => {
   return (
     <>
       <Titre text="Accueil" />
       <Content>
-        <Card recipeType="Salé" />
-        <Card recipeType="Sucré" />
-        <Card recipeType="Surprise" />
+        <img src={buffet} alt="Buffet" className="accueilImage" />
       </Content>
     </>
   );
