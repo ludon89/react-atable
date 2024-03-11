@@ -1,7 +1,5 @@
-.flexCont {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+.mainContent {
+  display: block;
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
 }
