@@ -2,9 +2,9 @@ import "../styles/footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <p className="text">2023 - Copyright</p>
-    </div>
+    </footer>
   );
 }
 

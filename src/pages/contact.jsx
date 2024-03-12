@@ -8,12 +8,10 @@ import Form from "../components/Form";
 const Contact = () => {
   return (
     <>
-      <main>
-        <Titre text="Contact" />
-        <Content>
-          <Form />
-        </Content>
-      </main>
+      <Titre text="Contact" />
+      <Content>
+        <Form />
+      </Content>
     </>
   );
 };

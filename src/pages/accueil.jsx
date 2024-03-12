@@ -9,12 +9,10 @@ import "../styles/accueil.css";
 const Accueil = () => {
   return (
     <>
-      <main>
-        <Titre text="Accueil" />
-        <Content>
-          <img src={buffet} alt="Buffet" className="accueilImage" />
-        </Content>
-      </main>
+      <Titre text="Accueil" />
+      <Content>
+        <img src={buffet} alt="Buffet" className="accueilImage" />
+      </Content>
     </>
   );
 };

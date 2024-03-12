@@ -7,12 +7,10 @@ import { RecipeData } from "../components/Recipe";
 const Recettes = () => {
   return (
     <>
-      <main>
-        <Titre text="Recettes" />
-        <Content>
-          <RecipeData />
-        </Content>
-      </main>
+      <Titre text="Recettes" />
+      <Content>
+        <RecipeData />
+      </Content>
     </>
   );
 };
