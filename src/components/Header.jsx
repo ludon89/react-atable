@@ -14,11 +14,11 @@ function Header() {
 
   return (
     <header className="header">
-      <nav className="nav">
+      <div className="nav">
         <a href="#" className="nav__brand">
           <img src={logo} alt="logo du restaurant" className="logo" />
         </a>
-      </nav>
+      </div>
     </header>
   );
 }
